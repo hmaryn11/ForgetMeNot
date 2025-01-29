@@ -1,0 +1,197 @@
+﻿@*Note: Maryn, you may need to go back to some videos to make sure you didnt miss anything - videos 4 & 5 of Mission 9--this is for database scaffolding and context files*@
+<style>
+
+    .w-70-cent {
+        width: 70%;
+        margin: auto;
+    }
+
+    .gall-pic {
+        height:30rem;
+        border: 4.5px solid white;
+        border-radius: 4px;
+    }
+
+    .gallery-div {
+        border: 3.5px solid white;
+        border-radius:5px;
+        padding: 2rem;
+    }
+
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 50px solid #555;
+        border-bottom: 25px solid transparent;
+        margin: auto;
+        margin-left: 1rem;
+    }
+
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 50px solid lightgrey;
+        border-bottom: 25px solid transparent;
+        margin: auto;
+        margin-right: 1rem;
+    }
+
+</style>
+
+<script src="~/javascript/Home/Index.js"></script>
+
+<div>
+    <div>
+        @*        <div class="d-flex justify-content-between p-5" style="position:fixed;width:100%;top:0px;background-color:whitesmoke;height:10rem;">
+
+            <img src="~/image/fmn_flower_logo.png" style="height:6rem;"/>
+            <div style="text-align:center;font-family:serif;color:saddlebrown;margin:auto;">
+                <div style="display:flex;">
+                    <h2 style="margin-right:1.5rem">F O R G E T</h2>
+                    <h2 style="margin-right:1.5rem">M E</h2>
+                    <h2>N O T</h2>
+                </div>
+                <div style="display:flex; justify-content:center; margin:auto;">
+                    <p style="margin-right:1rem">F L O R A L</p>
+                    <p>P R E S S</p>
+                </div>
+            </div>
+            <div id="menuIconClosed" onclick="selectMenu()">
+                <hr class="hr-menu" style="margin-bottom:0.75rem"/>
+                <hr class="hr-menu" style="margin-bottom:0.75rem"/>
+                <hr class="hr-menu" />
+            </div>
+            <div class="menu-open" id="menuIconOpen">
+                <p class="x-menu" onclick="deselectMenu()">&times;</p>
+                <div style="margin-bottom:3rem;">
+                    <a style="font-size:1.5rem;" class="link-nuller" asp-controller="Home" asp-action="Index">Home</a>
+                    <hr style="margin-bottom:1rem;margin-top:1rem;"/>
+                    <a style="font-size:1.5rem;" class="link-nuller" asp-controller="Home" asp-action="MakeOrder">Make an Order</a>
+                    <hr style="margin-bottom:1rem;margin-top:1rem;"/>
+                    <a style="font-size:1.5rem;" class="link-nuller" asp-controller="Home" asp-action="Gallery">Gallery</a>
+                    <hr style="margin-bottom:1rem;margin-top:1rem;"/>
+                    <a style="font-size:1.5rem;" class="link-nuller" asp-controller="Home" asp-action="Contact">Contact Info</a>
+                </div>
+            </div>*@
+
+
+    </div>
+    <div style="padding-right:7rem;margin-top:12rem;">
+        <h1 class="" style="text-align:right;font-size:3.5rem;">Preserve the memories that </h1>
+        <h1 class="" style="text-align:right;font-size:3.5rem;">will never be forgotten</h1>
+        <a href="#piece_options" class="btn py-2 my-3" style="background-color:#E1D9CF;float:right;font-size:1.5rem;height:4rem;width:15rem;display:flex;justify-content:center;align-items:center;">Get Started Here</a>
+    </div>
+    <div class="d-flex align-items-baseline" style="margin-top:5rem;margin-left:3rem;">
+        <img src="~/image/courthouseZinnias.JPG" class="mx-3" style="height:35rem;" />
+        <img src="~/image/courthouseLilBlue.JPG" style="height:19rem;" />
+        <img src="~/image/templeRose.JPG" class="mx-3" style="height:31rem;" />
+        <img src="~/image/karaFlower.jpg" style="height:23rem;" />
+    </div>
+</div>
+<hr class="mt-5" />
+<div class="py-5 my-4 text-center">
+    <h4>A company created to help you remember the special and sacred</h4>
+    <h4>moments of your life and bring nature into your home.</h4>
+    <img id="piece_options" src="~/image/fmn_flower_logo.png" style="height:6rem;margin-top:1.5rem;margin-bottom:-1.5rem;" />
+</div>
+<hr class="mb-5" />
+<div style="background: rgba(255, 255, 255, .6);border:5px solid white;border-radius:10px;width:90%;height:30rem;margin:auto;">
+    <div class="text-center pt-5 pd-2">
+        <h1 style="font-size:3.2rem;">LET'S GET STARTED</h1>
+        <h4 style="color:#438166;">To begin, let's choose the type of piece you would like</h4>
+    </div>
+    <div class="d-flex px-5 py-4">
+        <div class="text-center px-4">
+            <h2>(%)</h2>
+            <h2 class="pb-4 pt-3">Wedding Bouquets</h2>
+            <p>
+                "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                Include anything that is good for them to know off the bat."
+            </p>
+        </div>
+        <div class="text-center px-4">
+            <h2>(%)</h2>
+            <h2 class="pb-4 pt-3">Memorial Arrangments</h2>
+            <p>
+                "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                Include anything that is good for them to know off the bat."
+            </p>
+        </div>
+        <div class="text-center px-4">
+            <h2>(%)</h2>
+            <h2 class="pb-4 pt-3">Other Custom Pieces</h2>
+            <p>
+                "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                Include anything that is good for them to know off the bat."
+            </p>
+        </div>
+        <div class="text-center px-4">
+            <h2>(%)</h2>
+            <h2 class="pb-4 pt-3">Pre-Made Pieces</h2>
+            <p>
+                "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                Include anything that is good for them to know off the bat."
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+<hr class="my-5" />
+
+@*---------Photo Gallery-------------*@
+<div class="text-center pd-2">
+    <h1 style="font-size:3.2rem;">GALLERY</h1>
+    <h4 style="color:#438166;margin-bottom:2.5rem;">Below are pictures of previous pieces I have done for each category of press florals.</h4>
+    <div style="width:70%;margin:auto;">
+        <div class="d-flex gallery-div" style="margin-bottom: 2rem;">
+            <div style="margin:auto;">
+                <h2 class="pb-4 pt-3">Wedding Bouquets</h2>
+                <p class="w-70-cent">
+                    "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                    Include anything that is good for them to know off the bat."
+                </p>
+            </div>
+            <div class="triangle-left"></div>
+            <img class="gall-pic" src="~/image/WeddingPiece.JPG" />
+            <div class="triangle-right"></div>
+        </div>
+        <div class="d-flex gallery-div" style="margin-bottom: 2rem;">
+            <div class="triangle-left"></div>
+            <img class="gall-pic" src="~/image/MemorialPiece.jpg" />
+            <div class="triangle-right"></div>
+            <div style="margin:auto;">
+                <h2 class="pb-4 pt-3">Memorial Arrangments</h2>
+                <p class="w-70-cent">
+                    "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                    Include anything that is good for them to know off the bat."
+                </p>
+            </div>
+        </div>
+        <div class="d-flex gallery-div" style="margin-bottom: 2rem;">
+            <div style="margin:auto;">
+                <h2 class="pb-4 pt-3">Other Custom Pieces</h2>
+                <p class="w-70-cent">
+                    "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                    Include anything that is good for them to know off the bat."
+                </p>
+            </div>
+            <div class="triangle-left"></div>
+            <img class="gall-pic" src="~/image/GardenPiece.JPG" />
+            <div class="triangle-right"></div>
+        </div>
+        <div class="d-flex gallery-div">
+            <div class="triangle-left"></div>
+            <img class="gall-pic" src="~/image/PreMadePiece.JPG" />
+            <div class="triangle-right"></div>
+            <div style="margin:auto;">
+                <h2 class="pb-4 pt-3">Pre-Made Pieces</h2>
+                <p class="w-70-cent">
+                    "Write about the specific piece type and what is possible for the people who want to purchase this piece.
+                    Include anything that is good for them to know off the bat."
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
